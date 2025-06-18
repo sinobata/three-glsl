@@ -1,0 +1,49 @@
+{
+  "rules": {
+    "no-unused-uniform": "error",
+    "no-unused-varying": "warn",
+    "no-unused-attribute": "warn",
+    "no-redeclare": "error",
+    "no-undef": "error",
+    "precision-must-be-declared": "error"
+  },
+  "globals": {
+    "gl_Position": "readonly",
+    "gl_FragColor": "readonly",
+    "gl_FragCoord": "readonly",
+    "gl_PointSize": "readonly",
+    "position": "readonly",
+    "uv": "readonly",
+    "normal": "readonly",
+    "projectionMatrix": "readonly",
+    "modelViewMatrix": "readonly",
+    "normalMatrix": "readonly"
+  },
+  "env": {
+    "webgl": true,
+    "three": true
+  },
+  "extends": [
+    "glsl:recommended"
+  ],
+  "stage": {
+    ".vert": "vertex",
+    ".frag": "fragment",
+    ".vs": "vertex",
+    ".fs": "fragment",
+    ".glsl": "fragment"
+  },
+  "validator": "/opt/homebrew/bin/glslangValidator",
+  "options": {
+    "linkShaders": true,
+    "strictArrayAccess": false,
+    "hlslOffsets": false,
+    "hlslIoMapping": false
+  },
+  "defines": {
+    "GL_ES": "1"
+  },
+  "includes": [
+    "./src/shaders"
+  ]
+}

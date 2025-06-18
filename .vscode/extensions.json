@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "slevesque.shader",
+    "raczzalan.webgl-glsl-editor",
+    "dtoplak.vscode-glsllint",
+    "stevensona.shader-toy",
+    "circledev.glsl-canvas",
+    "esbenp.prettier-vscode",
+    "xaver.clang-format",
+    "ms-vscode.vscode-typescript-next"
+  ]
+}
