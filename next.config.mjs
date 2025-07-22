@@ -2,6 +2,8 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  basePath: '/three-glsl',
+  assetPrefix: '/three-glsl/',
   images: {
     unoptimized: true,
   },
