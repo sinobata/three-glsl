@@ -24,9 +24,9 @@ export default function ShaderMesh({ position = [0, 0, 0], scale = [1, 1, 1] }: 
       vertexShader,
       fragmentShader,
       uniforms: {
-        u_time: { value: 0 },
-        u_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
-        u_mouse: { value: new THREE.Vector2(0, 0) },
+        time: { value: 0 },
+        resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+        mouse: { value: new THREE.Vector2(0, 0) },
       },
       side: THREE.DoubleSide,
     });
@@ -52,4 +52,4 @@ export default function ShaderMesh({ position = [0, 0, 0], scale = [1, 1, 1] }: 
       />
     </mesh>
   );
-} 
+}
