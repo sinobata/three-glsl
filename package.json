@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next build",
+    "deploy": "npm run export && touch out/.nojekyll",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\" && npm run format:glsl",
     "format:check": "prettier --check \"**/*.{js,ts,tsx,json,md}\"",
     "format:glsl": "find src/shaders -name '*.glsl' -o -name '*.frag' -o -name '*.vert' | xargs clang-format -i",

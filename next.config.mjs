@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+
   webpack: (config, { isServer }) => {
     // GLSL, fragment shader, vertex shader files support
     config.module.rules.push({
@@ -18,7 +24,7 @@ const nextConfig = {
 
     return config;
   },
-  
+
   // Turbopack configuration for .frag and .vert files
   experimental: {
     turbo: {
@@ -40,4 +46,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig; 
+export default nextConfig;
